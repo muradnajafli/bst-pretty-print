@@ -87,7 +87,7 @@ public class TreeNode<T extends Comparable<T>> {
         if (left != null) {
 
             left.printTree(out, false, indent + (isRight ? " │" + " ".repeat(value.toString().length() - 1)
-                    : "" + " ".repeat(value.toString().length() + 1)));
+                    : " ".repeat(value.toString().length() + 1)));
         }
     }
 
